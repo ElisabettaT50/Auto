@@ -1,16 +1,18 @@
-public class Main {
-    public static void main(String []Args) {
+public class Main{
+    public static void main(String []args){
+        Auto auto1 = new Auto(1400, "ZA406VZ", 'a', "Jeep");
 
-        Studente studente1 = new Studente("Andrea", "Rossi", 99951);
+       System.out.println("Dettagli: ");
+        System.out.println("Cilindrata: " + auto1.getCilindrata());
+        System.out.println("Targa: " + auto1.getTarga());
+        System.out.println("Modello: " + auto1.getModello());
+        System.out.println("Marca: " + auto1.getMarca());
 
-        System.out.println("Nome studente: " + studente1.getNome());
-        System.out.println("Cognome studente: " + studente1.getCognome());
-        System.out.println("ID studente: " + studente1.getId());
+        auto1.setCilindrata(1300);
+        auto1.setTarga("GH321FZ");
+        auto1.setModello('f');
+        auto1.setMarca("Honda");
 
-        studente1.setNome("Gaia");
-        studente1.setCognome("Bianchi");
-        studente1.setId(99952);
-
-        System.out.println(studente1);
+        System.out.println(auto1);
     }
 }
